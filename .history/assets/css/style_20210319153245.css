@@ -8,8 +8,6 @@
 
 body {
     background-color: #F2F2F2;
-    /* background-image: url(/assets/imgs/cda7673ed09e765c8c6213244c50bb48.jpg); */
-    /* background-size: 100% 100%; */
     color: #444;
     font-family: "TIBch", "Classic Grotesque W01", "Helvetica Neue", Arial, "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -34,8 +32,7 @@ body {
     border-top: 1px solid rgba(150, 150, 150, 0.2);
 }
 
-a,
-button.submit {
+a, button.submit {
     color: #6E7173;
     text-decoration: none;
     -webkit-transition: all .1s ease-in;
@@ -44,8 +41,7 @@ button.submit {
     transition: all .1s ease-in;
 }
 
-a:hover,
-a:active {
+a:hover, a:active {
     color: #444;
 }
 
@@ -80,8 +76,7 @@ a:focus {
     color: #555;
 }
 
-#header .site-name #logo span,
-#header .site-name #logo:hover {
+#header .site-name #logo span, #header .site-name #logo:hover {
     color: #777;
 }
 
@@ -308,19 +303,16 @@ a:focus {
     display: block;
 }
 
-.post .post-content ul,
-.post .post-content ol {
+.post .post-content ul, .post .post-content ol {
     border-radius: 3px;
     margin: 1em 0;
 }
 
-.post .post-content ul ul,
-.post .post-content ol ul {
+.post .post-content ul ul, .post .post-content ol ul {
     margin: 0;
 }
 
-.post .post-content ul code,
-.post .post-content ol code {
+.post .post-content ul code, .post .post-content ol code {
     display: inline;
     margin: 0 5px;
     padding: 1px 5px;
@@ -328,15 +320,13 @@ a:focus {
     background: #eee;
 }
 
-.post .post-content ul a,
-.post .post-content ol a {
+.post .post-content ul a, .post .post-content ol a {
     color: #01579f;
     padding-bottom: 2px;
     word-break: break-all;
 }
 
-.post .post-content ul a:hover,
-.post .post-content ol a:hover {
+.post .post-content ul a:hover, .post .post-content ol a:hover {
     text-decoration: underline;
 }
 
@@ -477,8 +467,7 @@ a:focus {
 
 /* for different pages ends*/
 /*<middle*/
-@media print,
-screen and (max-width: 48em) {
+@media print, screen and (max-width: 48em) {
     .body_container {
         padding: 0 30px;
     }
@@ -505,8 +494,7 @@ screen and (max-width: 48em) {
 }
 
 /*<small*/
-@media print,
-screen and (max-width: 35.5em) {
+@media print, screen and (max-width: 35.5em) {
     .body_container {
         padding: 0 20px;
     }
@@ -530,14 +518,11 @@ blockquote p {
     font-style: italic;
 }
 
-strong,
-b,
-em {
+strong, b, em {
     font-weight: bold;
 }
 
-code,
-pre {
+code, pre {
     font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
     font-size: inherit;
 }
@@ -579,8 +564,7 @@ pre code {
 }
 
 /* back-to-top rocket*/
-@media print,
-screen and (min-width: 48em) {
+@media print, screen and (min-width: 48em) {
     #rocket {
         position: fixed;
         right: 50px;
@@ -657,8 +641,7 @@ div {
     width: 100%;
 }
 
-.timeline .timeline-item .info,
-.timeline .timeline-item .year {
+.timeline .timeline-item .info, .timeline .timeline-item .year {
     color: #eee;
     display: block;
     float: left;
@@ -1058,15 +1041,14 @@ figure {
     font-family: 'icomoon';
     src: url('../fonts/icomoon.eot?jhbhm');
     src: url('../fonts/icomoon.eot?jhbhm#iefix') format('embedded-opentype'),
-        url('../fonts/icomoon.ttf?jhbhm') format('truetype'),
-        url('../fonts/icomoon.woff?jhbhm') format('woff'),
-        url('../fonts/icomoon.svg?jhbhm#icomoon') format('svg');
+    url('../fonts/icomoon.ttf?jhbhm') format('truetype'),
+    url('../fonts/icomoon.woff?jhbhm') format('woff'),
+    url('../fonts/icomoon.svg?jhbhm#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
-[class^="icon-"],
-[class*=" icon-"] {
+[class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
     speak: none;
@@ -1274,8 +1256,8 @@ table tr:nth-child(2n) {
 
 .post-toc {
 
-    ul {
-        overflow: auto;
-    }
+ul {
+    overflow: auto;
+}
 
 }
