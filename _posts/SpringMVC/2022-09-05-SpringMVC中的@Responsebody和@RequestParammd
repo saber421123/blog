@@ -1,0 +1,16 @@
+---
+layout: post
+title:Spring中的@Responsebody和@RequestParam
+category: SpringMVC
+tags: SpringMVC
+description: Spring中的@Responsebody和@RequestParam
+keywords: SpringMVC
+score: 5.0
+coverage: libra_coverage.png
+published: true
+
+---
+
+## Spring中的@Responsebody和@RequestParam
+
+- 参考博客：[Spring中的@Responsebody和@RequestParam](https://blog.csdn.net/qq_26305015/article/details/84202863)
