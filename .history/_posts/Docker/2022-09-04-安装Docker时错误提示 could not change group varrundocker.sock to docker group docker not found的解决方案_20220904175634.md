@@ -1,13 +1,13 @@
 ---
 layout: post
 
-title: 安装Docker时错误提示 "could not change group /var/run/docker.sock to docker
+title: 安装Docker时错误提示 "could not change group /var/run/docker.sock to docker: group docker not found"的解决方案
 
 category: Docker
 
 tags: Docker
 
-description: 安装Docker时错误提示 "could not change group /var/run/docker.sock to docker
+description: 安装Docker时错误提示 "could not change group /var/run/docker.sock to docker: group docker not found"的解决方案
 
 keywords: Docker
 
