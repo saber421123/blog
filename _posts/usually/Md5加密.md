@@ -1,0 +1,62 @@
+---
+layout: post
+
+title: Md5加密
+
+category: usually
+
+tags: usually
+
+description: Md5加密 
+
+keywords: Md5
+
+score: 5.0
+
+coverage: libra_coverage.png
+
+published: true
+
+
+
+
+
+
+
+
+
+
+---
+
+# Md5加密
+
+> Message Digest algorithm 5，信息摘要算法
+
+-  压缩性：任意长度的数据，算出的 MD5 值长度都是固定的；
+-  容易计算：从原数据计算出 MD5 值很容易；
+- 抗修改性：对原数据进行任何改动，哪怕只修改 1 个字节，所得到的 MD5 值都有很大区别；
+- 强抗碰撞：想找到两个不同的数据，使它们具有相同的 MD5 值是非常困难的；
+- 不可逆
+
+```java
+@Test
+void contextLoads() {
+    String s = DigestUtils.md5Hex("123456");
+    System.out.println(s);
+    // 盐值加密
+    System.out.println(Md5Crypt.md5Crypt("123456".getBytes()));
+    System.out.println(Md5Crypt.md5Crypt("123456".getBytes(), "$1$qqqqqqqq"));
+
+    // Spring 盐值加密
+    BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
+    //$2a$10$GT0TjB5YK5Vx77Y.2N7hkuYZtYAjZjMlE6NWGE2Aar/7pk/Rmhf8S
+    //$2a$10$cR3lis5HQQsQSSh8/c3L3ujIILXkVYmlw28vLA39xz4mHDN/NBVUi
+    String encode = bCryptPasswordEncoder.encode("123456");
+    boolean matches = bCryptPasswordEncoder.matches("123456", "$2a$10$GT0TjB5YK5Vx77Y.2N7hkuYZtYAjZjMlE6NWGE2Aar/7pk/Rmhf8S");
+
+    System.out.println(encode + "==>" + matches);
+}
+```
+
+
+

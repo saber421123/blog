@@ -12,7 +12,7 @@ published: true
 
 ## SpringMVC viewcontroller
 > 直接将请求和页面映射过来
-```
+```java
 @Configuration
     public class GulimallWebConfig implements WebMvcConfigurer {
         @Override
