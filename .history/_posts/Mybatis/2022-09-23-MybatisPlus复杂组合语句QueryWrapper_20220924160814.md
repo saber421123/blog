@@ -24,7 +24,7 @@ published: true
 
 1. Wrapper介绍
 
-![image-20220924154910011](/assets/imgs/image-20220924154910011.png)
+![image-20220924154910011](../../assets/imgs/image-20220924154910011.png)
 
 
 
