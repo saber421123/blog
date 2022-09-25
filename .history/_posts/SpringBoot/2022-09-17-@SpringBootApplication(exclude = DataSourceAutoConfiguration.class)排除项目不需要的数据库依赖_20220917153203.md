@@ -1,13 +1,13 @@
 ---
 layout: post
 
-title: SpringBootApplication(exclude={DataSourceAutoConfiguration.calss})
+title: @SpringBootApplication(exclude={DataSourceAutoConfiguration.calss})
 
 category: SpringBoot
 
 tags: SpringBoot
 
-description: SpringBootApplication(exclude={DataSourceAutoConfiguration.calss})
+description: @SpringBootApplication(exclude={DataSourceAutoConfiguration.calss})
 
 keywords: SpringBoot
 
@@ -28,7 +28,7 @@ published: true
 
 ---
 
-# SpringBootApplication(exclude={DataSourceAutoConfiguration.calss})排除项目不需要的数据库依赖
+# @SpringBootApplication(exclude={DataSourceAutoConfiguration.calss})排除项目不需要的数据库依赖
 
  参考博客：[@SpringBootApplication(exclude={DataSourceAutoConfiguration.calss})排除项目不需要的数据库依赖](https://blog.csdn.net/m0_67402774/article/details/124034313)
 
