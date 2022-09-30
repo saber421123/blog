@@ -1,0 +1,102 @@
+---
+layout: post
+
+title: leetcode.104二叉树最大深度
+
+category: Algorithm
+
+tags: Algorithm
+
+description: leetcode.104二叉树最大深度
+
+keywords: Algorithm
+
+score: 5.0
+
+coverage: libra_coverage.png
+
+published: true
+
+
+
+---
+
+##  [leetcode.104二叉树最大深度(easy)](https://leetcode.cn/problems/maximum-depth-of-binary-tree/)
+
+描述：
+
+- 给定一个二叉树，找出其最大深度。
+
+  二叉树的深度为根节点到最远叶子节点的最长路径上的节点数。
+
+思路1:
+
+- 遍历整个二叉树
+
+```java
+public class 二叉树最大深度 {
+    public class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode() {
+        }
+
+        TreeNode(int val) {
+            this.val = val;
+        }
+
+        TreeNode(int val, TreeNode left, TreeNode right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
+    }
+
+    class Solution {
+        //遍历当前节点的深度
+        int deep = 0;
+        //记录最大深度返回值
+        int res = 0;
+
+        public int maxDepth(TreeNode root) {
+            tranverse(root);
+            return res;
+        }
+
+        private void tranverse(TreeNode root) {
+            if (root == null) {
+                return;
+            }
+//            前序
+            deep++;
+            if (root.left == null && root.right == null) {
+                res = Math.max(res, deep);
+            }
+            tranverse(root.left);
+            tranverse(root.right);
+//            后序
+            deep--;
+        }
+    }
+```
+
+思路2：
+
+- 分解成子问题，通过子节点来递归整棵树
+
+```java
+public int maxDepth2(TreeNode root) {
+            if (root == null) {
+                return 0;
+            }
+            int leftHeight = maxDepth2(root.left);
+            int rightHeight = maxDepth2(root.right);
+            int max = Math.max(leftHeight, rightHeight) + 1;
+            return max;
+        }
+```
+
+
+
