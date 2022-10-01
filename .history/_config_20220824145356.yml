@@ -3,7 +3,7 @@ title: Blog
 subtitle: zwstart
 keywords: zwstart
 description: this is program note of zwstart
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://zwstart.gitee.io/" # 你的域名
 page_no_title: "zwstart's blog" # 文章无标题时默认显示内容
 beian: # "备案号"
